@@ -1,0 +1,17 @@
+.Options {
+  width: 500px;
+  min-width: 500px;
+  margin: 30px auto;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.Options__list {
+  margin-top: 10px;
+}
+
+.Options__list a {
+  color: #00c9ff;
+  text-decoration: underline;
+  cursor: pointer;
+}

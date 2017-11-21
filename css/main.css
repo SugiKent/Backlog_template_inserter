@@ -1,0 +1,22 @@
+
+body {
+  font-size: 1.4rem;
+  line-height: 1;
+  margin: 0;
+  min-width: 340px;
+}
+
+.List {
+  list-style: none;
+}
+.List__item {
+  font-size: 13px;
+  line-height: 13px;
+  padding: 8px;
+  color: #888;
+  cursor: pointer;
+}
+.List__item:hover {
+  opacity: 0.8;
+  background: #eee;
+}

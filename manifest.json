@@ -1,0 +1,28 @@
+{
+  "name": "Backlog テンプレ挿入",
+  "version": "1.4",
+  "manifest_version": 2,
+  "description": "Backlogでデフォルトのフォーマットを自由に作成・追加します。",
+  "browser_action": {
+    "default_icon": {
+      "128": "images/icon/icon.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*/add/*"],
+      "js": ["js/jquery-2.1.4.min.js", "js/main.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Backlog テンプレ</title>
+    <link rel="stylesheet" href="css/options.css"/>
+    <link rel="stylesheet" href="css/form.css"/>
+  </head>
+  <body>
+    <h1>Backlog テンプレート</h1>
+    <div class="Options">
+      <div class="Form">
+        <div class="Form__group">
+          <label class="Form__label">テンプレート名</label>
+          <input class="Form__item Form__item--text js-Form__template" type="text" value="">
+        </div>
+        <div class="Form__group">
+          <label class="Form__label">内容</label>
+          <textarea class="Form__item Form__item--textarea js-Form__template" rows="8" cols="40"></textarea>
+        </div>
+        <div class="Form__group">
+          <a class="Form__button js-Form__template--button">
+            保存
+          </a>
+        </div>
+      </div>
+
+      <div class="Options__block">
+        <div class="Options__list js-Options__template">
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="Options">
+      <div class="Form">
+        <div class="Form__group">
+          <label class="Form__label">デフォルト担当者名</label>
+          <input class="Form__item Form__item--text js-Form__staff" type="text" value="">
+        </div>
+        <div class="Form__group">
+          <a class="Form__button js-Form__staff--button">
+            保存
+          </a>
+        </div>
+      </div>
+      <div class="Options__block">
+        <ul class="Options__list js-Options__staff">
+        </ul>
+      </div>
+    </div> -->
+
+    <div class="Options__block">
+      <button class="Options__clear">全消去</button>
+    </div>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/options.js"></script>
+  </body>
+</html>
